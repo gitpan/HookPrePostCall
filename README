@@ -1,19 +1,14 @@
-
-                       Parse::Lex.pm/Parse::Token.pm - 1.15
+	       o-o-o-o-o-o-o-o-o-o-o-o-o-o-o-o-o-o-o-o
+	      o                                       o
+	     o         Hook::PrePostCall - 1.2         o
+	      o                                       o
+	       o-o-o-o-o-o-o-o-o-o-o-o-o-o-o-o-o-o-o-o
 
 ___________
 DESCRIPTION
 
-The Parse::Lex.pm module for perl5 is an object-oriented generator of
-lexical analysers.
-
-Parse::Lex.pm is currently under development but perfectly usable
-(IMHO). Documentation is in French. It's not a linguistic provocation!
-I am very busy, and I've no time to translate the documentation in
-English (and I know that the result will not be perfect ;-).
-
-A collection of examples demonstrating various Parse::Lex features can
-be found in the "examples" directory.
+With the Hook::PrePostCall class you can hook pre and post actions on
+a routine.
 
 Copyright (c) 1995-1997 Philippe Verdret. All rights reserved.
 This program is free software; you can redistribute it and/or
@@ -34,41 +29,8 @@ HOW TO BUILD and INSTALL IT
 _____________________________________
 CHANGES, ESPECIALLY INCOMPATIBILITIES
 
-Modifications of the 1.14 version
+o Change from the 1.1 version
 
-o Some minor enhancements.
-
-o Definition of the Trace package.
-	
-  - the trace method takes now one argument, which is either a file
-    name or a reference to a filehandle.
-
-Modifications of the 1.13 version
-
-o Parse::Lex.pm - Bugs
-
-  - Token define as a three part pattern isn't correctly implemented
-    (Thanks to Thomas Mohr)
-  - The default filehandle isn't correctly defined 
-    Doesn't work with perl 5.004
-    (Thanks to Helmut Jarausch)
-
-Modifications of the 1.12 version
-
-o Parse::Token.pm - New methods
-
-  set() decorate a token object with an attribute-value list.
-
-  get() get the value of a token object attribute
-
-o Parse::Token.pm - Renamming
-
-  set() is now named setbuffer()
-
-  get() is now named getbuffer()
-
-  met() is now named isnext()
-
-o Warning suppressions
-
+  - new() used as a class or an object method.
+  - minor enhancements of the documentation and implementation
 

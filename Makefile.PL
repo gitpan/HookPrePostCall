@@ -1,10 +1,18 @@
-use ExtUtils::MakeMaker;	# See the Camel, page 409-
-require 5.002;
-$Verbose = 1;
-WriteMakefile(
-	      'NAME'		=> 'Parse::Lex',
-	      'VERSION_FROM'	=> 'Parse/Lex.pm',
-	      'clean'		=> {'FILES' => 'err'},
-	      'dist'            => { COMPRESS => 'gzip', SUFFIX => 'gz' },
-);
+# Makefile.PL -- Makefile template for Hook::PrePostCall.
+#
+# Copyright (C) 1997 Philippe Verdret. All rights reserved.
+# This file is part of Hook::PrePostCall module. 
+# Hook::PrePostCall is free software.
+# You can redistribute it and/or modify it under the same
+# terms as Perl itself.
+#
 
+use ExtUtils::MakeMaker;
+
+WriteMakefile(
+	      'dist'  => { COMPRESS => "gzip", SUFFIX => "gz" },
+	      NAME         => "Hook::PrePostCall",
+	      DISTNAME     => "PrePostCall",
+	      VERSION_FROM => "Hook/PrePostCall.pm",
+	      INSTALLDIRS  => 'perl',
+);
